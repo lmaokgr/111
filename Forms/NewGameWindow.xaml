@@ -1,0 +1,32 @@
+﻿<Window x:Class="Laboratory_work_3.Forms.NewGameWindow"
+        Icon="pack://application:,,,/images/ps1.jpg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laboratory_work_3.Forms"
+        mc:Ignorable="d"
+        Title="Параметры новой игры" Height="450" Width="800"
+         Background="#FFC0CB">
+    <Grid>
+        <StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Label  Background="#FFF0F5" Foreground="#800000" Margin="5">Укажите имя игрока</Label>
+                <TextBox Background="#FFF0F5" Foreground="#800000" Name="tbName" Width="150" Margin="5"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label  Background="#FFF0F5" Foreground="#800000" Margin="5">Укажите возраст</Label>
+                <TextBox Background="#FFF0F5" Foreground="#800000" Name="tbAge" Width="150" Margin="5"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label  Background="#FFF0F5" Foreground="#800000" Margin="5">Выберете пол</Label>
+                <ComboBox Background="#FFF0F5" Foreground="#800000" Name="cbGender" Width="150" Margin="5"></ComboBox>
+            </StackPanel>
+
+            <Button Background="#800000"  Foreground="#FFF0F5" x:Name="btCreateGame" Margin="20" Click="btCreateGame_Click">Создать</Button>
+        </StackPanel>
+    </Grid>
+</Window>

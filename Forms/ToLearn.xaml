@@ -1,0 +1,56 @@
+﻿<Window x:Class="Laboratory_work_3.Forms.ToLearn"
+        Icon="pack://application:,,,/images/ps1.jpg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laboratory_work_3.Forms"
+        mc:Ignorable="d"
+        Title="Обучение видеоблогингу" Height="450" Width="800"
+        Background="#FFC0CB">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="147*"  />
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="267*"  />
+            <ColumnDefinition Width="267*"  />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,0,266,0">
+            <StackPanel VerticalAlignment="Center">
+                <Button x:Name="btExit" Background="#800000" Foreground="#FFF0F5" Click="btExit_Click">Выйти</Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Margin="0,39,266,0" Grid.RowSpan="2">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Margin="5" Background="#FFF0F5" Foreground="#800000" HorizontalAlignment="Center">Школа видеоблогинга на YouTube</TextBlock>
+                <TextBlock Margin="5" Background="#FFF0F5" Foreground="#800000" HorizontalAlignment="Center">(опыт +10, усталость +10, цена: бесплатно)</TextBlock>
+                <Image Height="200" Width="150" Source="pack://application:,,,/images/k1.jpg"/>
+                <Button x:Name="btRead1" Foreground="#FFF0F5" Background="#800000"  Click="btRead1_Click">Изучить</Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="2" Margin="0,39,0,0" Grid.RowSpan="2">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Margin="5" Background="#FFF0F5" Foreground="#800000" HorizontalAlignment="Center">Курс видеоблогинга от Кати Клэп</TextBlock>
+                <TextBlock Margin="5" Background="#FFF0F5" Foreground="#800000" HorizontalAlignment="Center">(опыт +20, усталость +20, цена: 200 ₽)</TextBlock>
+                <Image Height="200" Width="150" Source="pack://application:,,,/images/books.jpg"/>
+                <Button x:Name="btRead2" Foreground="#FFF0F5" Background="#800000"  Click="btRead2_Click">Изучить</Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="2" Grid.ColumnSpan="2" Margin="266,39,0,0" Grid.RowSpan="2">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Margin="5" Background="#FFF0F5" Foreground="#800000" HorizontalAlignment="Center">Курс 'Балдёж' от Кузьмы</TextBlock>
+                <TextBlock Margin="5" Background="#FFF0F5" Foreground="#800000" HorizontalAlignment="Center">(опыт +30, усталость +30, цена: 500 ₽)</TextBlock>
+                <Image Height="200" Width="150" Source="pack://application:,,,/images/course.jpg"/>
+                <Button x:Name="btRead3" Foreground="#FFF0F5" Background="#800000" Click="btRead3_Click">Изучить</Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
